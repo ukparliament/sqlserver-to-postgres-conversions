@@ -1,4 +1,4 @@
-# sqlserver-to-postgres-conversions
+# MS SQL Server to Postgres conversions 
 
 We have a number of applications where the data is held in a SQL Server database. It's useful for us to be able to convert those databases into Postgres databases (which we are happier with). This documents the current process. There might be a better way of doing this, but this does work, it's just how much time do we want to spend making a better way!
 
