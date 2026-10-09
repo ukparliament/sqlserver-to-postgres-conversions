@@ -1,0 +1,12 @@
+LOAD DATABASE
+     FROM mssql://{{MSSQL_USERNAME}}:{{MSSQL_PASSWORD}}@host.docker.internal:1433/DepositedPapers
+     INTO postgresql://{{POSTGRES_USER}}@host.docker.internal:5432/ms-sql-deposited-papers-dump-October-2026
+
+WITH include drop,
+      create tables,
+      create indexes,
+      reset sequences
+
+SET search_path to 'public'
+
+ALTER SCHEMA 'dbo' RENAME TO 'public';
