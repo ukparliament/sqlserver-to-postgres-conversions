@@ -4,14 +4,15 @@ We have a number of applications where the data is held in a SQL Server database
 
 ## Requirements
 
--[] Either a `.bacpac` or a `.bak` database dump of the SQL Server database.
--[] [Azure Data Studio](https://learn.microsoft.com/en-us/previous-versions/azure-data-studio/download-azure-data-studio) (since discontinued) installed on your computer
--[] Local postgres installation
--[] Docker installed
--[] [Docker SQL Server 2022 image](https://hub.docker.com/r/microsoft/mssql-server) - `docker pull mcr.microsoft.com/mssql/server:2022-latest`
--[] Set up the SQL Server instance - `docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest`
--[] Fire up Azure Data Studio and see if you can connect to the SQL Server instance
--[] Create local postgres database using `createdb [your desired postgres database name]`
+ 
+* Either a `.bacpac` or a `.bak` database dump of the SQL Server database.
+* [Azure Data Studio](https://learn.microsoft.com/en-us/previous-versions/azure-data-studio/download-azure-data-studio) (since discontinued) installed on your computer
+* Local postgres installation
+* Docker installed
+* [Docker SQL Server 2022 image](https://hub.docker.com/r/microsoft/mssql-server) - `docker pull mcr.microsoft.com/mssql/server:2022-latest`
+* Set up the SQL Server instance - `docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest`
+* Fire up Azure Data Studio and see if you can connect to the SQL Server instance
+* Create local postgres database using `createdb [your desired postgres database name]`
 
 ## Getting this data imported using docker pgloader
 
